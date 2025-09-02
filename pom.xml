@@ -80,6 +80,9 @@
         <docker.jib-maven-plugin.version>2.6.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
+        <!-- Sonar -->
+        <sonar.java.spotbugs.reportPaths>target/spotbugs/spotbugs.xml</sonar.java.spotbugs.reportPaths>
+        <sonar.javascript.jshint.reportPaths>jshint-report.xml</sonar.javascript.jshint.reportPaths>
     </properties>
 
     <dependencyManagement>
@@ -459,6 +462,26 @@
                     </to>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>4.8.3.1</version>
+                <configuration>
+                    <xmlOutput>true</xmlOutput>
+                    <xmlOutputDirectory>${project.build.directory}/spotbugs</xmlOutputDirectory>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>spotbugs</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
 
         </plugins>
     </build>
