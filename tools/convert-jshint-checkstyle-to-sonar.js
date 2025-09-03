@@ -40,7 +40,9 @@ const { parseStringPromise } = require('xml2js');
             filePath: filePath,
             textRange: {
               startLine: line,
-              startColumn: column
+              startColumn: column,
+              endLine: line,
+              endColumn: column + 1 // ✅ ensures non-zero length range
             }
           }
         });
