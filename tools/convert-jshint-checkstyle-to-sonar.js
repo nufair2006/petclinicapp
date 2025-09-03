@@ -29,6 +29,11 @@ const { parseStringPromise } = require('xml2js');
         let column = parseInt(attrs.column, 10) || 1;
         if (column > maxCol) column = maxCol > 0 ? maxCol : 1;
 
+        let endColumn = column + 1;
+        if (endColumn > maxCol + 1) {
+          endColumn = maxCol + 1; // ✅ never exceed line length + 1
+        }
+
         sonarIssues.push({
           engineId: 'jshint',
           ruleId: attrs.source || 'jshint:unknown',
@@ -42,10 +47,11 @@ const { parseStringPromise } = require('xml2js');
               startLine: line,
               startColumn: column,
               endLine: line,
-              endColumn: column + 1 // ✅ ensures non-zero length range
+              endColumn: endColumn
             }
           }
         });
+
       });
     });
 
