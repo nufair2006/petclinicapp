@@ -3,114 +3,122 @@
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 4,
-          "startColumn": 7
+          "endLine": 4
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 8,
-          "startColumn": 34
+          "endLine": 8
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 12,
-          "startColumn": 44
+          "endLine": 12
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 15,
-          "startColumn": 38
+          "endLine": 15
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 24,
-          "startColumn": 17
+          "endLine": 24
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 28,
-          "startColumn": 19
+          "endLine": 28
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 31,
-          "startColumn": 36
+          "endLine": 31
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     },
     {
       "engineId": "jshint",
       "ruleId": "jshint.W033",
+      "ruleName": "jshint.W033",
+      "severity": "MINOR",
+      "type": "CODE_SMELL",
       "primaryLocation": {
         "message": "Missing semicolon.",
         "filePath": "src/main/webapp/sample.js",
         "textRange": {
           "startLine": 35,
-          "startColumn": 26
+          "endLine": 35
         }
-      },
-      "type": "CODE_SMELL",
-      "severity": "MINOR"
+      }
     }
   ]
 }

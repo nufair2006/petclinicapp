@@ -22,18 +22,6 @@ const { parseStringPromise } = require('xml2js');
         const attrs = err.$;
         const line = parseInt(attrs.line, 10) || 1;
 
-        // Clamp column
-        const lineIndex = Math.max(0, line - 1);
-        const maxCol = (srcLines[lineIndex] || '').length;
-
-        let column = parseInt(attrs.column, 10) || 1;
-        if (column > maxCol) column = maxCol > 0 ? maxCol : 1;
-
-        let endColumn = column + 1;
-        if (endColumn > maxCol + 1) {
-          endColumn = maxCol + 1; // ✅ never exceed line length + 1
-        }
-
         sonarIssues.push({
           engineId: 'jshint',
           ruleId: attrs.source || 'jshint:unknown',
@@ -45,9 +33,7 @@ const { parseStringPromise } = require('xml2js');
             filePath: filePath,
             textRange: {
               startLine: line,
-              startColumn: column,
               endLine: line,
-              endColumn: endColumn
             }
           }
         });
