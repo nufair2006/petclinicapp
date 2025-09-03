@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <checkstyle version="4.3">
-	<file name="src/main/java/org/springframework/samples/petclinic/repository/sample.js">
+	<file name="src/main/webapp/sample.js">
 		<error line="4" column="7" severity="warning" message="Missing semicolon." source="jshint.W033" />
 		<error line="8" column="34" severity="warning" message="Missing semicolon." source="jshint.W033" />
 		<error line="12" column="44" severity="warning" message="Missing semicolon." source="jshint.W033" />
